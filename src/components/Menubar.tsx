@@ -3,6 +3,7 @@ import { MdOutlineDashboard } from "react-icons/md";
 import { RiStackLine, RiSettingsLine } from "react-icons/ri";
 import { AiOutlineBarChart, AiOutlineMore, AiOutlineComment } from "react-icons/ai";
 import logo from "./images/logo.svg"
+import { Link } from "react-router-dom";
 export const Menubar = () => {
     return (
         <div className="main-menubar">
@@ -11,46 +12,52 @@ export const Menubar = () => {
             </div>
             <div className="menubar">
                 <div className="menubar-item">
-                    <a href="#">
+                    <Link to="/dashboard">
                         <MdOutlineDashboard className="icon" />
                         <p>Dashboard</p>
-                    </a>
+                    </Link>
                 </div >
                 <div className="menubar-item">
-                    <a href="#">
+                    <Link to="/devices">
                         <FiMonitor className="icon" />
                         <p>Thiết bị</p>
-                    </a>
+                    </Link>
                 </div>
                 <div className="menubar-item">
-                    <a href="#">
+                    <Link to="services">
                         <AiOutlineComment className="icon" />
                         <p>Dịch vụ</p>
-                    </a>
+                    </Link>
                 </div>
                 <div className="menubar-item">
-                    <a href="#">
+                    <Link to="oder-number">
                         <RiStackLine className="icon" />
                         <p>Cấp số</p>
-                    </a>
+                    </Link>
                 </div>
                 <div className="menubar-item">
-                    <a href="#">
+                    <Link to="report">
                         <AiOutlineBarChart className="icon" />
                         <p>Báo cáo</p>
-                    </a>
+                    </Link>
                 </div>
                 <div className="menubar-item">
-                    <a href="#">
+                    <Link to="#">
                         <RiSettingsLine className="icon" />
                         <p> Cài đặt hệ thống </p>
                         <AiOutlineMore className="icon1" />
                         <div className="drop-down-item">
-                            <a href="#"><p>Quản lý vai trò</p></a>
-                            <a href="#"><p>Quản lý tài khoản</p></a>
-                            <a href="#"><p>Nhật ký người dùng</p></a>
+                            <Link to="#">
+                                <p>Quản lý vai trò</p>
+                            </Link>
+                            <Link to="#">
+                                <p>Quản lý tài khoản</p>
+                            </Link>
+                            <Link to="#">
+                                <p>Nhật ký người dùng</p>
+                            </Link>
                         </div>
-                    </a>
+                    </Link>
                 </div>
             </div>
             <div className='logout'>

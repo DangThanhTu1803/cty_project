@@ -1,14 +1,14 @@
-import { Info } from "./infomation"
+
 import { Menubar } from "./Menubar"
+import { Overview } from "./overview"
 import { Topbar } from "./Topbar"
 
 export const Dashboard=()=>{
     return(
         <div className='bg'>
             <Menubar/>
-            
-            <Info/>
-            <Topbar/>
+            <Overview/>
+            <Topbar nametitle="Dashboard"/>
         </div>
     )
 }
