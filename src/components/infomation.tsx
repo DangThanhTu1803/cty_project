@@ -5,7 +5,7 @@ export const Infomation = () => {
         <div className="infomation-img">
             <div className='name-img'>
                 <div className='img-icon'>
-                    <img src="https://haycafe.vn/wp-content/uploads/2022/02/Anh-gai-xinh-cap-2-3-606x600.jpg" alt="" />
+                    <img src="https://data.whicdn.com/images/228714327/original.jpg" alt="" />
                     <div className='icon-cam'><HiOutlineCamera className='camera' /></div>
                 </div>
                 <p>Lê Quỳnh Ái Vân</p>

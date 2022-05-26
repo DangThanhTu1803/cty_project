@@ -13,7 +13,7 @@ export const Topbar = (props:title) => {
             <IconNoti />
             <Link to="/info" className="header_info">
                 <div className="avatar">
-                    <img src="https://haycafe.vn/wp-content/uploads/2022/02/Anh-gai-xinh-cap-2-3-606x600.jpg" alt="fail img" />
+                    <img src="https://data.whicdn.com/images/228714327/original.jpg" alt="fail img" />
                 </div>
                 <div className="name-user">
                     <p>Xin chào</p>
