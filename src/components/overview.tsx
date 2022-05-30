@@ -1,6 +1,9 @@
 import { FiMonitor } from "react-icons/fi";
 import { AiOutlineComment } from "react-icons/ai";
 import { RiStackLine } from "react-icons/ri";
+import Chart from 'react-apexcharts'
+import { buildStyles, CircularProgressbar } from "@rhazegh/react-circular-progressbar";
+import { Calendar } from "./Calendar";
 
 export const Overview = () => {
     return (
@@ -8,6 +11,24 @@ export const Overview = () => {
             <span>Tổng quan</span>
             <div className="overview-device">
                 <div className='percent'>
+                    <div className="percent-1">
+                        <CircularProgressbar
+                            value={90}
+                            strokeWidth={5}
+                            styles={buildStyles({
+                                pathColor: '#FF7506',
+                                trailColor: '#EAEAEC'
+                            })} />
+                    </div>
+                    <div className='percent-2'>
+                        <CircularProgressbar
+                            value={10}
+                            strokeWidth={5}
+                            styles={buildStyles({
+                                pathColor: '#7E7D88',
+                                trailColor: '#EAEAEC'
+                            })} />
+                    </div>
                     <p>90%</p>
                 </div>
                 <div className='quantity'>
@@ -36,6 +57,24 @@ export const Overview = () => {
             </div>
             <div className="overview-service">
                 <div className='percent'>
+                    <div className="percent-1">
+                        <CircularProgressbar
+                            value={76}
+                            strokeWidth={5}
+                            styles={buildStyles({
+                                pathColor: '#4277FF',
+                                trailColor: '#EAEAEC'
+                            })} />
+                    </div>
+                    <div className='percent-2'>
+                        <CircularProgressbar
+                            value={24}
+                            strokeWidth={5}
+                            styles={buildStyles({
+                                pathColor: '#7E7D88',
+                                trailColor: '#EAEAEC'
+                            })} />
+                    </div>
                     <p>76%</p>
                 </div>
                 <div className='quantity'>
@@ -64,6 +103,33 @@ export const Overview = () => {
             </div>
             <div className="overview-num-order">
                 <div className='percent'>
+                <div className="percent-1">
+                        <CircularProgressbar
+                            value={86}
+                            strokeWidth={5}
+                            styles={buildStyles({
+                                pathColor: '#35C75A',
+                                trailColor: '#EAEAEC'
+                            })} />
+                    </div>
+                    <div className='percent-2'>
+                        <CircularProgressbar
+                            value={11}
+                            strokeWidth={5}
+                            styles={buildStyles({
+                                pathColor: '#7E7D88',
+                                trailColor: '#EAEAEC'
+                            })} />
+                    </div>
+                    <div className="percent-3">
+                    <CircularProgressbar
+                            value={3}
+                            strokeWidth={5}
+                            styles={buildStyles({
+                                pathColor: '#F178B6',
+                                trailColor: '#EAEAEC'
+                            })} />
+                    </div>
                     <p>86%</p>
                 </div>
                 <div className='quantity'>
@@ -98,7 +164,7 @@ export const Overview = () => {
                 </div>
             </div>
             <div className="overview-datepicker">
-                
+                <Calendar/>
             </div>
         </div>
     )

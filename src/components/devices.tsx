@@ -1,11 +1,15 @@
+
 import { Menubar } from "./Menubar"
 import { Topbar } from "./Topbar"
 
 export const Devices = () => {
-    return(
-        <div className="bg">
-            <Menubar/>
-            <Topbar nametitle="Thiết bị"/>
+    return (
+        <div className="back">
+            <div className="bg">
+                <Menubar />
+
+                <Topbar nametitle="Thiết bị" />
+            </div>
         </div>
     )
 }
