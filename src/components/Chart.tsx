@@ -35,11 +35,19 @@ export const Chart = () => {
         enabled: false
       },
       title: {
-        text: "Bảng thống kê theo tuần"
+        text: "Bảng thống kê theo tuần",
+        style: {
+          fontSize:  '20px',
+        }
       },
       subtitle:{
-        text:'1 ngay nao do'
-      },tooltip:{
+        text:'Tháng 6/2022',
+        style:{
+          fontSize:  '14px',
+          color: '#A9A9B0'
+        }
+      },
+      tooltip:{
         enabled: true,
         x:{
           show: false

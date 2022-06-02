@@ -8,7 +8,6 @@ import { Topbar } from "./Topbar"
 export const Dashboard = () => {
     return (
         <div className="back">
-
             <div className='bg'>
                 <h1>Biểu đồ cấp số</h1>
                 <Cards/>

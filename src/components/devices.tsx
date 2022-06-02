@@ -1,4 +1,5 @@
 
+import { Listdevices } from "./listdevices"
 import { Menubar } from "./Menubar"
 import { Topbar } from "./Topbar"
 
@@ -7,8 +8,8 @@ export const Devices = () => {
         <div className="back">
             <div className="bg">
                 <Menubar />
-
-                <Topbar nametitle="Thiết bị" />
+                <Listdevices/>
+                <Topbar nametitle="Thiết bị >" />
             </div>
         </div>
     )
