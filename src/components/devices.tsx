@@ -9,7 +9,7 @@ export const Devices = () => {
             <div className="bg">
                 <Menubar />
                 <Listdevices/>
-                <Topbar nametitle="Thiết bị >" />
+                <Topbar nametitle="Thiết bị > Danh sách thiết bị" />
             </div>
         </div>
     )

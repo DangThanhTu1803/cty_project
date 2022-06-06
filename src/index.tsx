@@ -9,6 +9,7 @@ import { Step2 } from './components/forgetpw2';
 import { Dashboard } from './components/dashboard';
 import { Devices } from './components/devices';
 import { Info } from './components/info';
+import { Adddevice } from './components/AddDevice/adddevice';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
@@ -23,6 +24,7 @@ root.render(
         <Route path='/quen-mat-khau-2' element={<Step2 />}/>
         <Route path='/devices' element={<Devices />}/>
         <Route path='/info' element={<Info/>}/>
+        <Route path='/devices/add-device' element={<Adddevice/>}/>
       </Routes>
     </BrowserRouter>
     

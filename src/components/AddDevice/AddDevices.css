@@ -1,0 +1,294 @@
+h2 {
+    position: absolute;
+    width: 160px;
+    height: 30px;
+    left: 24px;
+    top: 16px;
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30px;
+    color: #FF7506;
+}
+
+.add-info-device p {
+    /* width: 81px; */
+    height: 24px;
+
+    /* 16/16 Semi */
+
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    /* identical to box height, or 150% */
+
+    display: flex;
+    align-items: center;
+
+    /* Gray/$-gray-500 */
+
+    color: #282739;
+
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.add-info-device input {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-left: 12px;
+    gap: 10px;
+
+    width: 528px;
+    height: 44px;
+    background: #FFFFFF;
+    border: 1.5px solid #D4D4D7;
+    border-radius: 8px;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.device_id {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 8px;
+
+    position: absolute;
+    width: 540px;
+    height: 76px;
+    left: 24px;
+    top: 66px;
+}
+
+
+.device_name {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 8px;
+
+    position: absolute;
+    width: 540px;
+    height: 76px;
+    left: 24px;
+    top: 158px;
+}
+
+
+
+.device_IP {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 8px;
+
+    position: absolute;
+    width: 540px;
+    height: 76px;
+    left: 24px;
+    top: 250px;
+}
+
+.device_type {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 8px;
+
+    position: absolute;
+    width: 540px;
+    height: 76px;
+    left: 588px;
+    top: 66px;
+}
+
+.device_type div {
+    width: 24px;
+    height: 24px;
+    color: #FF7506;
+    position: absolute;
+    right: 12px;
+    bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+.device_username {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 8px;
+
+    position: absolute;
+    width: 540px;
+    height: 76px;
+    left: 588px;
+    top: 158px;
+
+}
+
+.device_userpwd {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 8px;
+
+    position: absolute;
+    width: 540px;
+    height: 76px;
+    left: 588px;
+    top: 250px;
+
+}
+
+.device_service {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 8px;
+
+    position: absolute;
+    width: 1104px;
+    height: 76px;
+    left: 24px;
+    top: 342px;
+}
+
+.device_service input {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    /* padding: 10px 270px 10px 12px; */
+    gap: 10px;
+
+    width: 1104px;
+    height: 44px;
+
+    /* white */
+
+    background: #FFFFFF;
+    /* Gray/$-gray-100 */
+
+    border: 1.5px solid #D4D4D7;
+    border-radius: 8px;
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+.note {
+    position: absolute;
+    width: 232px;
+    height: 24px;
+    left: 24px;
+    top: 434px;
+    display: flex;
+    flex-direction: row;
+}
+
+.note p {
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    display: flex;
+    align-items: center;
+    color: #7E7D88;
+}
+
+.cancel-add-btn {
+    position: absolute;
+    width: 326px;
+    height: 48px;
+    left: 634.5px;
+    top: 730px;
+}
+
+.cancel-add-btn .btn-cancel {
+    box-sizing: border-box;
+
+    /* Auto layout */
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 24px;
+    gap: 8px;
+
+    position: absolute;
+    width: 147px;
+    height: 48px;
+    left: 0px;
+    top: 0px;
+    font-family: 'Nunito';
+
+    /* Orange/$-Orange-50 */
+
+    background: #FFF2E7;
+    /* Orange/$-Orange-400 */
+
+    border: 1.5px solid #FF9138;
+    /* down */
+
+    box-shadow: 0px 0px 6px #E7E9F2;
+    border-radius: 8px;
+}
+
+.cancel-add-btn .btn-add {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 24px;
+    gap: 8px;
+
+    position: absolute;
+    width: 147px;
+    height: 48px;
+    left: 179px;
+    top: 0px;
+    color: #FFFFFF;
+    font-family: 'Nunito';
+    /* Orange/$-Orange-400 */
+
+    background: #FF9138;
+    /* down */
+    border: none;
+    box-shadow: 0px 0px 6px #E7E9F2;
+    border-radius: 8px;
+}
