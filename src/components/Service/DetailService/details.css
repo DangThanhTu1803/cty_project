@@ -1,0 +1,129 @@
+.info-service {
+    position: absolute;
+    width: 370px;
+    height: 606px;
+    left: 224px;
+    top: 172px;
+    background: #FFFFFF;
+    box-shadow: 2px 2px 8px rgba(232, 239, 244, 0.8);
+    border-radius: 12px;
+}
+
+.info-service h2 {
+    position: absolute;
+    width: 162px;
+    height: 30px;
+    left: 16px;
+    top: 16px;
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30px;
+    color: #FF7506;
+}
+
+.info-service span {
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    /* identical to box height, or 150% */
+
+    display: flex;
+    align-items: center;
+
+    /* Gray/$-gray-500 */
+
+    color: #282739;
+}
+
+.info-service p {
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    /* identical to box height, or 150% */
+
+    /* display: flex; */
+    /* align-items: center; */
+
+    /* Gray/$-gray-400 Text */
+
+    color: #535261;
+    position: absolute;
+    width: 200px;
+    top: 0px;
+    left: 125px;
+}
+
+.service_id {
+    position: absolute;
+    width: 300px;
+    height: 24px;
+    left: 16px;
+    top: 58px;
+}
+
+.service_nameservice {
+    position: absolute;
+    width: 221px;
+    height: 24px;
+    left: 16px;
+    top: 94px;
+}
+
+.service_descriptions {
+    position: absolute;
+    width: 296px;
+    height: 24px;
+    left: 16px;
+    top: 130px;
+}
+
+.info-service h3 {
+    position: absolute;
+    width: 136px;
+    height: 30px;
+    left: 16px;
+    top: 170px;
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30px;
+    color: #FF7506;
+}
+.autonumber{
+    position: absolute;
+width: 276px;
+height: 44px;
+left: 16px;
+top: 212px;
+display: flex;
+}
+.autonumber input:first-child{
+    /* display: flex; */
+/* flex-direction: row; */
+/* align-items: center; */
+padding: 10px;
+gap: 10px;
+
+position: absolute;
+width: 61px;
+height: 44px;
+left: 127px;
+top: 212px;
+background: #FFFFFF;
+border: 1.5px solid #D4D4D7;
+border-radius: 8px;
+}
+.prefix-number{
+    position: absolute;
+width: 172px;
+height: 44px;
+left: 16px;
+top: 268px;
+}

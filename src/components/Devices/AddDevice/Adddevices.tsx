@@ -1,5 +1,6 @@
 import React from 'react'
 import { TiArrowSortedDown } from 'react-icons/ti'
+import { Link } from 'react-router-dom'
 import './AddDevices.css'
 
 export const Adddevices = () => {
@@ -45,8 +46,12 @@ export const Adddevices = () => {
                 </div>
             </div>
             <div className='cancel-add-btn'>
-                <button className='btn-cancel'>Hủy bỏ</button>
-                <button className='btn-add'>Thêm thiết bị</button>
+                <Link to="/devices">
+                    <button className='btn-cancel'>Hủy bỏ</button>
+                </Link>
+                <Link to="/devices">
+                    <button className='btn-add'>Thêm thiết bị</button>
+                </Link>
             </div>
         </div>
     )

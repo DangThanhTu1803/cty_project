@@ -1,6 +1,6 @@
 import { Infomation } from "./infomation"
-import { Menubar } from "./Menubar"
-import { Topbar } from "./Topbar"
+import { Menubar } from "../Layout/Menubar"
+import { Topbar } from "../Layout/Topbar"
 
 export const Info = () => {
     return(

@@ -1,9 +1,9 @@
 
 import { Cards } from "./Cards"
 import { Chart } from "./Chart"
-import { Menubar } from "./Menubar"
+import { Menubar } from "../Layout/Menubar"
 import { Overview } from "./overview"
-import { Topbar } from "./Topbar"
+import { Topbar } from "../Layout/Topbar"
 
 export const Dashboard = () => {
     return (

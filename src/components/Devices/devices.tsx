@@ -1,7 +1,7 @@
 
 import { Listdevices } from "./listdevices"
-import { Menubar } from "./Menubar"
-import { Topbar } from "./Topbar"
+import { Menubar } from "../Layout/Menubar"
+import { Topbar } from "../Layout/Topbar"
 
 export const Devices = () => {
     return (
@@ -11,6 +11,7 @@ export const Devices = () => {
                 <Listdevices/>
                 <Topbar nametitle="Thiết bị > Danh sách thiết bị" />
             </div>
+            
         </div>
     )
 }

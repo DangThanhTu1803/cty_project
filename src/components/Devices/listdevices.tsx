@@ -1,8 +1,11 @@
 import React from 'react'
 import { TiArrowSortedDown, TiArrowSortedUp } from 'react-icons/ti'
 import { Add } from './add'
-import { Pagination } from './pagination'
+import { Pagination } from '../Pagination/pagination'
 import { Link } from "react-router-dom"
+import { FiSearch } from 'react-icons/fi'
+import { Connected, Disconnected } from '../status/connect/connect'
+import { Actived, NonActived } from '../status/active/active'
 
 export const Listdevices = () => {
     return (
@@ -25,13 +28,16 @@ export const Listdevices = () => {
             <div className='search'>
                 <p>Từ khóa</p>
                 <input type="text" placeholder='Nhập từ khóa...' />
+                <div className='icon_search'>
+                    <FiSearch />
+                </div>
             </div>
             <div>
-                <Link to={'/devices/add-device'}>
+                <Link to={'add-device'}>
                     <Add nametitle='Thêm thiết bị' />
                 </Link>
             </div>
-            <div className='device_table'>
+            <div className='table'>
                 <table>
                     <tr>
                         <th style={{ width: '103px' }}><p>Mã thiết bị</p></th>
@@ -60,16 +66,53 @@ export const Listdevices = () => {
                             </div>
                         </td>
                         <td>
+                            <NonActived />
+                        </td>
+                        <td>
+                            <Disconnected />
+                        </td>
+                        <td>
                             <div>
-                                <p className='dot'></p>
-                                <p>Ngưng hoạt động</p>
+                                <p>Khám tim mạch, Khám mắt...</p>
+                                <a href="#"><p>Xem thêm</p></a>
                             </div>
                         </td>
                         <td>
                             <div>
-                                <p className="dot"></p>
-                                <p>Mất kết nối</p>
+                                <Link to={'details'}>
+                                    Chi tiết
+                                </Link>
                             </div>
+                        </td>
+                        <td>
+                            <div>
+                                <Link to={'updates'}>
+                                    Cập nhật
+                                </Link>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div>
+                                <p>KIO_01</p>
+                            </div>
+                        </td>
+                        <td>
+                            <div>
+                                <p>Kiosk</p>
+                            </div>
+                        </td>
+                        <td>
+                            <div>
+                                <p>192.168.1.10</p>
+                            </div>
+                        </td>
+                        <td>
+                            <Actived />
+                        </td>
+                        <td>
+                            <Connected />
                         </td>
                         <td>
                             <div>
@@ -105,16 +148,10 @@ export const Listdevices = () => {
                             </div>
                         </td>
                         <td>
-                            <div>
-                                <p className='dot'></p>
-                                <p>Ngưng hoạt động</p>
-                            </div>
+                            <Actived />
                         </td>
                         <td>
-                            <div>
-                                <p className="dot"></p>
-                                <p>Mất kết nối</p>
-                            </div>
+                            <Disconnected />
                         </td>
                         <td>
                             <div>
@@ -150,16 +187,10 @@ export const Listdevices = () => {
                             </div>
                         </td>
                         <td>
-                            <div>
-                                <p className='dot'></p>
-                                <p>Ngưng hoạt động</p>
-                            </div>
+                            <NonActived />
                         </td>
                         <td>
-                            <div>
-                                <p className="dot"></p>
-                                <p>Mất kết nối</p>
-                            </div>
+                            <Connected />
                         </td>
                         <td>
                             <div>
@@ -195,16 +226,10 @@ export const Listdevices = () => {
                             </div>
                         </td>
                         <td>
-                            <div>
-                                <p className='dot'></p>
-                                <p>Ngưng hoạt động</p>
-                            </div>
+                            <Actived />
                         </td>
                         <td>
-                            <div>
-                                <p className="dot"></p>
-                                <p>Mất kết nối</p>
-                            </div>
+                            <Disconnected />
                         </td>
                         <td>
                             <div>
@@ -240,16 +265,10 @@ export const Listdevices = () => {
                             </div>
                         </td>
                         <td>
-                            <div>
-                                <p className='dot'></p>
-                                <p>Ngưng hoạt động</p>
-                            </div>
+                            <Actived />
                         </td>
                         <td>
-                            <div>
-                                <p className="dot"></p>
-                                <p>Mất kết nối</p>
-                            </div>
+                            <Connected />
                         </td>
                         <td>
                             <div>
@@ -285,16 +304,10 @@ export const Listdevices = () => {
                             </div>
                         </td>
                         <td>
-                            <div>
-                                <p className='dot'></p>
-                                <p>Ngưng hoạt động</p>
-                            </div>
+                            <NonActived />
                         </td>
                         <td>
-                            <div>
-                                <p className="dot"></p>
-                                <p>Mất kết nối</p>
-                            </div>
+                            <Connected />
                         </td>
                         <td>
                             <div>
@@ -330,16 +343,10 @@ export const Listdevices = () => {
                             </div>
                         </td>
                         <td>
-                            <div>
-                                <p className='dot'></p>
-                                <p>Ngưng hoạt động</p>
-                            </div>
+                            <Actived />
                         </td>
                         <td>
-                            <div>
-                                <p className="dot"></p>
-                                <p>Mất kết nối</p>
-                            </div>
+                            <Connected />
                         </td>
                         <td>
                             <div>
@@ -375,61 +382,10 @@ export const Listdevices = () => {
                             </div>
                         </td>
                         <td>
-                            <div>
-                                <p className='dot'></p>
-                                <p>Ngưng hoạt động</p>
-                            </div>
+                            <Actived />
                         </td>
                         <td>
-                            <div>
-                                <p className="dot"></p>
-                                <p>Mất kết nối</p>
-                            </div>
-                        </td>
-                        <td>
-                            <div>
-                                <p>Khám tim mạch, Khám mắt...</p>
-                                <a href="#"><p>Xem thêm</p></a>
-                            </div>
-                        </td>
-                        <td>
-                            <div>
-                                <a href="#">Chi tiết</a>
-                            </div>
-                        </td>
-                        <td>
-                            <div>
-                                <a href="#">Cập nhật</a>
-                            </div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <div>
-                                <p>KIO_01</p>
-                            </div>
-                        </td>
-                        <td>
-                            <div>
-                                <p>Kiosk</p>
-                            </div>
-                        </td>
-                        <td>
-                            <div>
-                                <p>192.168.1.10</p>
-                            </div>
-                        </td>
-                        <td>
-                            <div>
-                                <p className='dot'></p>
-                                <p>Ngưng hoạt động</p>
-                            </div>
-                        </td>
-                        <td>
-                            <div>
-                                <p className="dot"></p>
-                                <p>Mất kết nối</p>
-                            </div>
+                            <Disconnected />
                         </td>
                         <td>
                             <div>

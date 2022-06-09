@@ -15,26 +15,14 @@ h2 {
 .add-info-device p {
     /* width: 81px; */
     height: 24px;
-
-    /* 16/16 Semi */
-
     font-family: 'Nunito';
     font-style: normal;
     font-weight: 600;
     font-size: 16px;
     line-height: 24px;
-    /* identical to box height, or 150% */
-
     display: flex;
     align-items: center;
-
-    /* Gray/$-gray-500 */
-
     color: #282739;
-
-
-    /* Inside auto layout */
-
     flex: none;
     order: 0;
     flex-grow: 0;
@@ -240,9 +228,6 @@ h2 {
 
 .cancel-add-btn .btn-cancel {
     box-sizing: border-box;
-
-    /* Auto layout */
-
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -256,15 +241,12 @@ h2 {
     left: 0px;
     top: 0px;
     font-family: 'Nunito';
-
-    /* Orange/$-Orange-50 */
-
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22px;
     background: #FFF2E7;
-    /* Orange/$-Orange-400 */
-
     border: 1.5px solid #FF9138;
-    /* down */
-
     box-shadow: 0px 0px 6px #E7E9F2;
     border-radius: 8px;
 }
@@ -283,7 +265,6 @@ h2 {
     left: 179px;
     top: 0px;
     color: #FFFFFF;
-    font-family: 'Nunito';
     /* Orange/$-Orange-400 */
 
     background: #FF9138;
@@ -291,4 +272,9 @@ h2 {
     border: none;
     box-shadow: 0px 0px 6px #E7E9F2;
     border-radius: 8px;
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22px;
 }

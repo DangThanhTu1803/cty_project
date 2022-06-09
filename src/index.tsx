@@ -4,12 +4,17 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { Route, BrowserRouter, Routes } from 'react-router-dom';
-import { ForgetPW } from './components/forgetpw';
-import { Step2 } from './components/forgetpw2';
-import { Dashboard } from './components/dashboard';
-import { Devices } from './components/devices';
-import { Info } from './components/info';
-import { Adddevice } from './components/AddDevice/adddevice';
+import { ForgetPW } from './components/Login/forgetpw';
+import { Step2 } from './components/Login/forgetpw2';
+import { Dashboard } from './components/Dashboard/dashboard';
+import { Devices } from './components/Devices/devices';
+import { Info } from './components/InfoUser/info';
+import { Adddevice } from './components/Devices/AddDevice/adddevice';
+import { DetailsDevice } from './components/Devices/DetailDevice/DetailsDevice';
+import { UpdateDevice } from './components/Devices/UpdateDevice/UpdateDevice';
+import { ListService } from './components/Service/ListService';
+import { AddService } from './components/Service/AddService/AddService';
+import { DetailService } from './components/Service/DetailService/DetailService';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
@@ -25,6 +30,12 @@ root.render(
         <Route path='/devices' element={<Devices />}/>
         <Route path='/info' element={<Info/>}/>
         <Route path='/devices/add-device' element={<Adddevice/>}/>
+        <Route path='/devices/details' element={<DetailsDevice/>}/>
+        <Route path='/devices/updates' element={<UpdateDevice/>}/>
+        <Route path='/services' element={<ListService/>}/>
+        <Route path='/services/add-service' element={<AddService/>}/>
+        <Route path='/services/details' element={<DetailService/>}/>
+
       </Routes>
     </BrowserRouter>
     

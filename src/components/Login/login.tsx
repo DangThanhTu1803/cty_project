@@ -1,7 +1,7 @@
 
 import { FiEye, FiEyeOff } from 'react-icons/fi'
-import login from './images/login.svg'
-import logo from './images/logo.svg'
+import login from '../images/login.svg'
+import logo from '../images/logo.svg'
 import { Link } from "react-router-dom"
 
 export const Login = () => {
@@ -41,7 +41,7 @@ export const Login = () => {
                 </Link>
             </div>
             <div>
-                <Link to={'/Dashboard'}>
+                <Link to={'/info'}>
                     <button type="submit" className="submit">Đăng nhập</button>
                 </Link>
             </div>

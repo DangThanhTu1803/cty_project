@@ -1,5 +1,5 @@
-import logo from './images/logo.svg'
-import forget from './images/forget.svg'
+import logo from '../images/logo.svg'
+import forget from '../images/forget.svg'
 import { Link } from 'react-router-dom'
 
 export const ForgetPW = () => {

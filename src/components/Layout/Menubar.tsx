@@ -2,7 +2,7 @@ import { FiLogOut, FiMonitor } from "react-icons/fi";
 import { MdOutlineDashboard } from "react-icons/md";
 import { RiStackLine, RiSettingsLine } from "react-icons/ri";
 import { AiOutlineBarChart, AiOutlineMore, AiOutlineComment } from "react-icons/ai";
-import logo from "./images/logo.svg"
+import logo from "../images/logo.svg"
 import { Link } from "react-router-dom";
 export const Menubar = () => {
     return (
@@ -24,19 +24,19 @@ export const Menubar = () => {
                     </Link>
                 </div>
                 <div className="menubar-item">
-                    <Link to="services">
+                    <Link to="/services">
                         <AiOutlineComment className="icon" />
                         <p>Dịch vụ</p>
                     </Link>
                 </div>
                 <div className="menubar-item">
-                    <Link to="oder-number">
+                    <Link to="/order-number">
                         <RiStackLine className="icon" />
                         <p>Cấp số</p>
                     </Link>
                 </div>
                 <div className="menubar-item">
-                    <Link to="report">
+                    <Link to="/report">
                         <AiOutlineBarChart className="icon" />
                         <p>Báo cáo</p>
                     </Link>

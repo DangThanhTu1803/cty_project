@@ -1,7 +1,7 @@
 import { NONAME } from 'dns'
 import { Link } from 'react-router-dom'
-import forget from './images/forget.svg'
-import logo from './images/logo.svg'
+import forget from '../images/forget.svg'
+import logo from '../images/logo.svg'
 import { FiEye, FiEyeOff } from 'react-icons/fi'
 
 export const Step2 = () => {
