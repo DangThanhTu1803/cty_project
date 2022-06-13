@@ -8,7 +8,7 @@ import { Login } from './components/Login/login'
 function App() {
   return (
     <div className='back'>
-
+      
       <div className='bg'>
         <Login />
       </div>

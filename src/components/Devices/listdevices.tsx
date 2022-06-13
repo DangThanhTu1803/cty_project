@@ -1,6 +1,6 @@
 import React from 'react'
 import { TiArrowSortedDown, TiArrowSortedUp } from 'react-icons/ti'
-import { Add } from './add'
+import { Add } from './btnRightLayout/add'
 import { Pagination } from '../Pagination/pagination'
 import { Link } from "react-router-dom"
 import { FiSearch } from 'react-icons/fi'
@@ -406,8 +406,9 @@ export const Listdevices = () => {
                     </tr>
                 </table>
             </div>
-
-            <Pagination />
+            <div className="pagin">
+                <Pagination />
+            </div>
         </div>
     )
 }

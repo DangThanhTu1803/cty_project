@@ -2,7 +2,7 @@ import React from 'react'
 import './detailDevice.css'
 import { Menubar } from '../../Layout/Menubar'
 import { Topbar } from '../../Layout/Topbar'
-import { UpdateBtn } from '../updateBtn'
+import { UpdateBtn } from '../btnRightLayout/updateBtn'
 import { Link } from 'react-router-dom'
 
 export const DetailsDevice = () => {

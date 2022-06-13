@@ -7,7 +7,7 @@ import { TiArrowSortedDown } from 'react-icons/ti'
 import { IoMdArrowDropright } from 'react-icons/io'
 import { FiSearch } from 'react-icons/fi'
 import { Link } from 'react-router-dom'
-import { Add } from '../Devices/add'
+import { Add } from '../Devices/btnRightLayout/add'
 import { Actived, NonActived } from '../status/active/active'
 
 export const ListService = () => {
@@ -363,7 +363,9 @@ export const ListService = () => {
         </div>
 
         <Menubar />
+        <div className='pagin'>
         <Pagination />
+        </div>
         <Topbar nametitle='Thiết bị > Danh sách dịch vụ' />
       </div>
     </div>
