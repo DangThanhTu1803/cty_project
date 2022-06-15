@@ -8,8 +8,8 @@ export const Account = () => {
     <div className='back'>
       <div className="bg">
         <AccountContent />
-        <Menubar />
-        <Topbar nametitle='Cài đặt hệ thống > Quản lý tài khoản' />
+        <Menubar buttonid='qltk'/>
+        <Topbar nametitle1='Cài đặt hệ thống >' nametitle2='' href='' nametitle21='' href2='' nametitle3='Quản lý tài khoản' />
       </div>
     </div>
   )

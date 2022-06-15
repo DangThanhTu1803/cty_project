@@ -8,8 +8,8 @@ export const UserLog = () => {
     <div className='back'>
         <div className="bg">
             <UserLogContent/>
-            <Menubar/>
-            <Topbar nametitle='Cài đặt hệ thống > Nhật ký hoạt động'/>
+            <Menubar buttonid='nknd'/>
+            <Topbar nametitle1='Cài đặt hệ thống >' nametitle2='' href='' nametitle21='' href2='' nametitle3=' Nhật ký hoạt động'/>
         </div>
     </div>
   )

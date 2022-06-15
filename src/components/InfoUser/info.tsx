@@ -7,9 +7,9 @@ export const Info = () => {
         <div className="back">
 
         <div className="bg">
-            <Menubar/>
+            <Menubar buttonid=""/>
             <Infomation/>
-            <Topbar nametitle="Thông tin cá nhân"/>
+            <Topbar nametitle1='' nametitle2='' href='' nametitle21='' href2='' nametitle3=''/>
         </div>
         </div>
     )

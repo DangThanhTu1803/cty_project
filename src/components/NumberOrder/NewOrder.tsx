@@ -22,8 +22,8 @@ export const NewOrder = () => {
                     <button className='btn-add'>In số</button>
                 </div>
             </div>
-            <Menubar/>
-            <Topbar nametitle='Cấp số > Danh sách cấp số > Cấp số mới'/>
+            <Menubar buttonid='cs'/>
+            <Topbar nametitle1='Cấp số >' nametitle2='Danh sách cấp số >' href='/order-number' nametitle21='' href2='' nametitle3='Cấp số mới'/>
         </div>
     </div>
   )

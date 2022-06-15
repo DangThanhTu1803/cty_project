@@ -8,8 +8,8 @@ export const ReportList = () => {
     <div className='back'>
         <div className='bg'>
             <ReportListContent/>
-            <Menubar/>
-            <Topbar nametitle='Báo cáo > Lập báo cáo'/>
+            <Menubar buttonid='bc'/>
+            <Topbar nametitle1='Báo cáo >' nametitle2='' href='' nametitle21='' href2='' nametitle3='Lập báo cáo'/>
         </div>
     </div>
   )

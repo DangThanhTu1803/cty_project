@@ -8,8 +8,8 @@ export const UpdateServices = () => {
     <div className='back'>
         <div className="bg">
             <AddServicesContent name='Cập nhật'/>
-            <Menubar/>
-            <Topbar nametitle='Thiết bị > Danh sách dịch vụ > Chi tiết > Cập nhật'/>
+            <Menubar buttonid='dv'/>
+            <Topbar nametitle1='Dịch vụ >' nametitle2='Danh sách dịch vụ >' href='/services' nametitle21='Chi tiết >' href2='/services/details' nametitle3='Cập nhật'/>
         </div>
     </div>
   )

@@ -13,8 +13,8 @@ export const NumberOrderList = () => {
             <Link to ={'new-number'}>
               <Add nametitle='Cấp số mới'/>
             </Link>
-            <Menubar/>
-            <Topbar nametitle='Cấp số > Danh sách cấp số'/>
+            <Menubar buttonid='cs'/>
+            <Topbar nametitle1='Cấp số >' nametitle2='' href='' nametitle21='' href2='' nametitle3='Danh sách cấp số'/>
         </div>
     </div>
   )

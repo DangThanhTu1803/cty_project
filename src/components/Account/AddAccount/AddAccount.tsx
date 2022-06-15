@@ -8,8 +8,8 @@ export const AddAccount = () => {
     <div className='back'>
         <div className="bg">
             <AddAccountContent title='Thêm'/>
-            <Menubar/>
-            <Topbar nametitle='Cài đặt hệ thống > Quản lý tài khoản > Thêm tài khoản'/>
+            <Menubar buttonid='nknd'/>
+            <Topbar nametitle1='Cài đặt hệ thống >' nametitle2='Quản lý tài khoản >' href='/account' nametitle21='' href2='' nametitle3='Thêm tài khoản'/>
         </div>
     </div>
   )

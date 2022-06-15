@@ -362,11 +362,11 @@ export const ListService = () => {
           </table>
         </div>
 
-        <Menubar />
+        <Menubar buttonid='dv'/>
         <div className='pagin'>
         <Pagination />
         </div>
-        <Topbar nametitle='Thiết bị > Danh sách dịch vụ' />
+        <Topbar nametitle1='Dịch vụ >' nametitle2='' href='' nametitle21='' href2='' nametitle3='Danh sách dịch vụ'  />
       </div>
     </div>
   )

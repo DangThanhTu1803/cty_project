@@ -25,252 +25,255 @@ export const UserLogContent = () => {
             </div>
             <div className="table">
                 <table>
-                    <tr>
-                        <th>
-                            <div>
-                                <p>Tên đăng nhập</p>
-                            </div>
-                        </th>
-                        <th>
-                            <div>
-                                <p>Thời gian tác động</p>
-                            </div>
-                        </th>
-                        <th>
-                            <div>
-                                <p>IP thực hiện</p>
-                            </div>
-                        </th>
-                        <th>
-                            <div>
-                                <p>Thao tác thực hiện</p>
-                            </div>
-                        </th>
-                    </tr>
-                    <tr>
-                        <td>
-                            <div>
-                                <p>tuyetnguyen@12</p>
-                            </div>
-                        </td>
-                        <td>
-                            <div>
-                                <p>01/12/2021 15:12:17</p>
-                            </div>
-                        </td>
-                        <td>
-                            <div>
-                                <p>192.168.3.1</p>
-                            </div>
-                        </td>
-                        <td>
-                            <div>
-                                <p>Cập nhật thông tin dịch vụ DV_01</p>
-                            </div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <div>
-                                <p>tuyetnguyen@12</p>
-                            </div>
-                        </td>
-                        <td>
-                            <div>
-                                <p>01/12/2021 15:12:17</p>
-                            </div>
-                        </td>
-                        <td>
-                            <div>
-                                <p>192.168.3.1</p>
-                            </div>
-                        </td>
-                        <td>
-                            <div>
-                                <p>Cập nhật thông tin dịch vụ DV_01</p>
-                            </div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <div>
-                                <p>tuyetnguyen@12</p>
-                            </div>
-                        </td>
-                        <td>
-                            <div>
-                                <p>01/12/2021 15:12:17</p>
-                            </div>
-                        </td>
-                        <td>
-                            <div>
-                                <p>192.168.3.1</p>
-                            </div>
-                        </td>
-                        <td>
-                            <div>
-                                <p>Cập nhật thông tin dịch vụ DV_01</p>
-                            </div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <div>
-                                <p>tuyetnguyen@12</p>
-                            </div>
-                        </td>
-                        <td>
-                            <div>
-                                <p>01/12/2021 15:12:17</p>
-                            </div>
-                        </td>
-                        <td>
-                            <div>
-                                <p>192.168.3.1</p>
-                            </div>
-                        </td>
-                        <td>
-                            <div>
-                                <p>Cập nhật thông tin dịch vụ DV_01</p>
-                            </div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <div>
-                                <p>tuyetnguyen@12</p>
-                            </div>
-                        </td>
-                        <td>
-                            <div>
-                                <p>01/12/2021 15:12:17</p>
-                            </div>
-                        </td>
-                        <td>
-                            <div>
-                                <p>192.168.3.1</p>
-                            </div>
-                        </td>
-                        <td>
-                            <div>
-                                <p>Cập nhật thông tin dịch vụ DV_01</p>
-                            </div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <div>
-                                <p>tuyetnguyen@12</p>
-                            </div>
-                        </td>
-                        <td>
-                            <div>
-                                <p>01/12/2021 15:12:17</p>
-                            </div>
-                        </td>
-                        <td>
-                            <div>
-                                <p>192.168.3.1</p>
-                            </div>
-                        </td>
-                        <td>
-                            <div>
-                                <p>Cập nhật thông tin dịch vụ DV_01</p>
-                            </div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <div>
-                                <p>tuyetnguyen@12</p>
-                            </div>
-                        </td>
-                        <td>
-                            <div>
-                                <p>01/12/2021 15:12:17</p>
-                            </div>
-                        </td>
-                        <td>
-                            <div>
-                                <p>192.168.3.1</p>
-                            </div>
-                        </td>
-                        <td>
-                            <div>
-                                <p>Cập nhật thông tin dịch vụ DV_01</p>
-                            </div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <div>
-                                <p>tuyetnguyen@12</p>
-                            </div>
-                        </td>
-                        <td>
-                            <div>
-                                <p>01/12/2021 15:12:17</p>
-                            </div>
-                        </td>
-                        <td>
-                            <div>
-                                <p>192.168.3.1</p>
-                            </div>
-                        </td>
-                        <td>
-                            <div>
-                                <p>Cập nhật thông tin dịch vụ DV_01</p>
-                            </div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <div>
-                                <p>tuyetnguyen@12</p>
-                            </div>
-                        </td>
-                        <td>
-                            <div>
-                                <p>01/12/2021 15:12:17</p>
-                            </div>
-                        </td>
-                        <td>
-                            <div>
-                                <p>192.168.3.1</p>
-                            </div>
-                        </td>
-                        <td>
-                            <div>
-                                <p>Cập nhật thông tin dịch vụ DV_01</p>
-                            </div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <div>
-                                <p>tuyetnguyen@12</p>
-                            </div>
-                        </td>
-                        <td>
-                            <div>
-                                <p>01/12/2021 15:12:17</p>
-                            </div>
-                        </td>
-                        <td>
-                            <div>
-                                <p>192.168.3.1</p>
-                            </div>
-                        </td>
-                        <td>
-                            <div>
-                                <p>Cập nhật thông tin dịch vụ DV_01</p>
-                            </div>
-                        </td>
-                    </tr>
+                    <tbody>
+                        <tr>
+                            <th>
+                                <div>
+                                    <p>Tên đăng nhập</p>
+                                </div>
+                            </th>
+                            <th>
+                                <div>
+                                    <p>Thời gian tác động</p>
+                                </div>
+                            </th>
+                            <th>
+                                <div>
+                                    <p>IP thực hiện</p>
+                                </div>
+                            </th>
+                            <th>
+                                <div>
+                                    <p>Thao tác thực hiện</p>
+                                </div>
+                            </th>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div>
+                                    <p>tuyetnguyen@12</p>
+                                </div>
+                            </td>
+                            <td>
+                                <div>
+                                    <p>01/12/2021 15:12:17</p>
+                                </div>
+                            </td>
+                            <td>
+                                <div>
+                                    <p>192.168.3.1</p>
+                                </div>
+                            </td>
+                            <td>
+                                <div>
+                                    <p>Cập nhật thông tin dịch vụ DV_01</p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div>
+                                    <p>tuyetnguyen@12</p>
+                                </div>
+                            </td>
+                            <td>
+                                <div>
+                                    <p>01/12/2021 15:12:17</p>
+                                </div>
+                            </td>
+                            <td>
+                                <div>
+                                    <p>192.168.3.1</p>
+                                </div>
+                            </td>
+                            <td>
+                                <div>
+                                    <p>Cập nhật thông tin dịch vụ DV_01</p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div>
+                                    <p>tuyetnguyen@12</p>
+                                </div>
+                            </td>
+                            <td>
+                                <div>
+                                    <p>01/12/2021 15:12:17</p>
+                                </div>
+                            </td>
+                            <td>
+                                <div>
+                                    <p>192.168.3.1</p>
+                                </div>
+                            </td>
+                            <td>
+                                <div>
+                                    <p>Cập nhật thông tin dịch vụ DV_01</p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div>
+                                    <p>tuyetnguyen@12</p>
+                                </div>
+                            </td>
+                            <td>
+                                <div>
+                                    <p>01/12/2021 15:12:17</p>
+                                </div>
+                            </td>
+                            <td>
+                                <div>
+                                    <p>192.168.3.1</p>
+                                </div>
+                            </td>
+                            <td>
+                                <div>
+                                    <p>Cập nhật thông tin dịch vụ DV_01</p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div>
+                                    <p>tuyetnguyen@12</p>
+                                </div>
+                            </td>
+                            <td>
+                                <div>
+                                    <p>01/12/2021 15:12:17</p>
+                                </div>
+                            </td>
+                            <td>
+                                <div>
+                                    <p>192.168.3.1</p>
+                                </div>
+                            </td>
+                            <td>
+                                <div>
+                                    <p>Cập nhật thông tin dịch vụ DV_01</p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div>
+                                    <p>tuyetnguyen@12</p>
+                                </div>
+                            </td>
+                            <td>
+                                <div>
+                                    <p>01/12/2021 15:12:17</p>
+                                </div>
+                            </td>
+                            <td>
+                                <div>
+                                    <p>192.168.3.1</p>
+                                </div>
+                            </td>
+                            <td>
+                                <div>
+                                    <p>Cập nhật thông tin dịch vụ DV_01</p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div>
+                                    <p>tuyetnguyen@12</p>
+                                </div>
+                            </td>
+                            <td>
+                                <div>
+                                    <p>01/12/2021 15:12:17</p>
+                                </div>
+                            </td>
+                            <td>
+                                <div>
+                                    <p>192.168.3.1</p>
+                                </div>
+                            </td>
+                            <td>
+                                <div>
+                                    <p>Cập nhật thông tin dịch vụ DV_01</p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div>
+                                    <p>tuyetnguyen@12</p>
+                                </div>
+                            </td>
+                            <td>
+                                <div>
+                                    <p>01/12/2021 15:12:17</p>
+                                </div>
+                            </td>
+                            <td>
+                                <div>
+                                    <p>192.168.3.1</p>
+                                </div>
+                            </td>
+                            <td>
+                                <div>
+                                    <p>Cập nhật thông tin dịch vụ DV_01</p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div>
+                                    <p>tuyetnguyen@12</p>
+                                </div>
+                            </td>
+                            <td>
+                                <div>
+                                    <p>01/12/2021 15:12:17</p>
+                                </div>
+                            </td>
+                            <td>
+                                <div>
+                                    <p>192.168.3.1</p>
+                                </div>
+                            </td>
+                            <td>
+                                <div>
+                                    <p>Cập nhật thông tin dịch vụ DV_01</p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div>
+                                    <p>tuyetnguyen@12</p>
+                                </div>
+                            </td>
+                            <td>
+                                <div>
+                                    <p>01/12/2021 15:12:17</p>
+                                </div>
+                            </td>
+                            <td>
+                                <div>
+                                    <p>192.168.3.1</p>
+                                </div>
+                            </td>
+                            <td>
+                                <div>
+                                    <p>Cập nhật thông tin dịch vụ DV_01</p>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+
                 </table>
             </div>
             <div className="pagin">
-                <Pagination/>
+                <Pagination />
             </div>
         </div>
     )

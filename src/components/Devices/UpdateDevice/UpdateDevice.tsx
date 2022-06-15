@@ -7,9 +7,9 @@ export const UpdateDevice = () => {
   return (
     <div className='back'>
         <div className="bg">
-            <Adddevices/>
-            <Menubar/>
-            <Topbar nametitle='Thiết bị > Danh sách thiết bị > Cập nhật thiết bị'/>
+            <Adddevices name='Cập nhật'/>
+            <Menubar buttonid='tb'/>
+            <Topbar nametitle1='Thiết bị >' nametitle2='Danh sách thiết bị > ' href='/devices' nametitle21='' href2='' nametitle3='Cập nhật thiết bị'/>
         </div>
     </div>
   )

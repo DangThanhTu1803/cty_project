@@ -162,8 +162,8 @@ export const DetailService = () => {
                     </div>
                 </div>
                 <UpdateAndBack href1='/services/updates' href2='/services'/>
-                <Menubar />
-                <Topbar nametitle='Thiết bị > Danh sách dịch vụ > Chi tiết' />
+                <Menubar buttonid='dv'/>
+                <Topbar nametitle1='Dịch vụ >' nametitle2='Danh sách dịch vụ >' href='/services' nametitle21='' href2='' nametitle3='Chi tiết' />
             </div>
         </div>
     )

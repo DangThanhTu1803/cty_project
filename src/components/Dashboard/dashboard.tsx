@@ -12,9 +12,9 @@ export const Dashboard = () => {
                 <h1>Biểu đồ cấp số</h1>
                 <Cards/>
                 <Chart/>
-                <Menubar />
+                <Menubar buttonid="db"/>
                 <Overview />
-                <Topbar nametitle="Dashboard" />
+                <Topbar nametitle1='' nametitle2='' href='' nametitle21='' href2='' nametitle3='Dashboard' />
             </div>
         </div>
     )

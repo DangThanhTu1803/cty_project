@@ -46,8 +46,8 @@ export const DetailsDevice = () => {
                         <p>Khám tim mạch, Khám sản - Phụ khoa, Khám răng hàm mặt, Khám tai mũi họng, Khám hô hấp, Khám tổng quát.</p>
                     </div>
                 </div>
-                <Menubar />
-                <Topbar nametitle='Thiết bị > Danh sách thiết bị > Chi tiết thiết bị' />
+                <Menubar buttonid='tb'/>
+                <Topbar nametitle1='Thiết bị' nametitle2='Danh sách thiết bị' href='/devices' nametitle21='' href2='' nametitle3='Chi tiết thiết bị' />
             </div>
         </div>
     )

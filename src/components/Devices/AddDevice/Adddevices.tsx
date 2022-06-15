@@ -2,8 +2,10 @@ import React from 'react'
 import { TiArrowSortedDown } from 'react-icons/ti'
 import { Link } from 'react-router-dom'
 import './AddDevices.css'
-
-export const Adddevices = () => {
+type titlebtn={
+    name:string
+}
+export const Adddevices = (props: titlebtn) => {
     return (
         <div>
             <h1>Quản lý thiết bị</h1>
@@ -50,7 +52,7 @@ export const Adddevices = () => {
                     <button className='btn-cancel'>Hủy bỏ</button>
                 </Link>
                 <Link to="/devices">
-                    <button className='btn-add'>Thêm thiết bị</button>
+                    <button className='btn-add'>{props.name}</button>
                 </Link>
             </div>
         </div>

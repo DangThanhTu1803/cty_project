@@ -54,8 +54,8 @@ export const OrderDetail = () => {
             <Link to ={'/order-number'}>
                 <BackBtn/>
             </Link>
-            <Menubar/>
-            <Topbar nametitle='Cấp số > Danh sách cấp số > Chi  tiết'/>
+            <Menubar buttonid='cs'/>
+            <Topbar nametitle1='Cấp số >' nametitle2='Danh sách cấp số >' href='/order-number' nametitle21='' href2='' nametitle3='Chi tiết'/>
         </div>
     </div>
   )
