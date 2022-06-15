@@ -161,7 +161,7 @@ export const DetailService = () => {
                         <Pagination />
                     </div>
                 </div>
-                <UpdateAndBack/>
+                <UpdateAndBack href1='/services/updates' href2='/services'/>
                 <Menubar />
                 <Topbar nametitle='Thiết bị > Danh sách dịch vụ > Chi tiết' />
             </div>

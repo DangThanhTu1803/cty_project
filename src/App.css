@@ -4,7 +4,15 @@
   margin: 0px;
   padding: 0px;
 }
+body{
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 
+}
 .bg {
   position: relative;
   width: 1440px;
@@ -18,7 +26,7 @@
   position: absolute;
   width: 1240px;
   height: 88px;
-  right: 0px;
+  left: 200px;
   top: 0px;
   border-top-right-radius: 16px;
   display: flex;
@@ -440,7 +448,11 @@ hr.line {
 }
 
 .icon1 {
-  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto 6px auto auto;
+  font-size: 20px;
 }
 
 .drop-down-item {
@@ -2040,29 +2052,40 @@ top: 8px; */
   order: 1;
   flex-grow: 0;
   font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.update-back_btn{
+.update-back_btn {
   display: flex;
-flex-direction: column;
-align-items: flex-start;
-padding: 0px;
-position: absolute;
-width: 80px;
-height: 170px;
-left: 1360px;
-top: 172px;
-filter: drop-shadow(0px 0px 6px #E7E9F2);
-border-radius: 8px 0px 0px 8px;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  position: absolute;
+  width: 80px;
+  height: 170px;
+  left: 1360px;
+  top: 172px;
+  filter: drop-shadow(0px 0px 6px #E7E9F2);
+  border-radius: 8px 0px 0px 8px;
 }
-.update-back_btn .btn-add{
+
+.update-back_btn a{
+  text-decoration: none;
+}
+
+.update-back_btn .btn-add {
   top: 0px;
   position: static;
   border-radius: 8px 0px 0px 0px;
+  flex: 1;
 }
-.update-back_btn .btn-back{
-  border-radius: 0px 0px 0px  8px;
+
+.update-back_btn .btn-back {
+  border-radius: 0px 0px 0px 8px;
   position: static;
+  flex: 1;
 }
 
 .btn-add {
@@ -2074,13 +2097,14 @@ border-radius: 8px 0px 0px 8px;
   position: absolute;
   width: 80px;
   height: 94px;
-  right: 0px;
+  left: 1360px;
   top: 244px;
   background: #FFF2E7;
   box-shadow: 0px 0px 6px #E7E9F2;
   border-radius: 8px 0px 0px 8px;
 }
-.btn-back{
+
+.btn-back {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -2110,7 +2134,8 @@ border-radius: 8px 0px 0px 8px;
   order: 1;
   flex-grow: 0;
 }
-.btn-back p{
+
+.btn-back p {
   width: 65px;
   height: 38px;
   font-family: 'Nunito';
@@ -2231,7 +2256,7 @@ input {
   background-color: #FFFFFF;
 }
 
-.pagin{
+.pagin {
   position: absolute;
   width: 288px;
   height: 32px;

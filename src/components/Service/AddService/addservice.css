@@ -115,7 +115,7 @@
 
 h3 {
     position: absolute;
-    width: 136px;
+    /* width: 136px; */
     height: 30px;
     left: 24px;
     top: 238px;

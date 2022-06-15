@@ -8,7 +8,9 @@ export const Menubar = () => {
     return (
         <div className="main-menubar">
             <div className="main-logo" >
-                <img src={logo} alt="" />
+                <Link to={'/dashboard'}>
+                    <img src={logo} alt="" />
+                </Link>
             </div>
             <div className="menubar">
                 <div className="menubar-item">
@@ -45,15 +47,17 @@ export const Menubar = () => {
                     <Link to="#">
                         <RiSettingsLine className="icon" />
                         <p> Cài đặt hệ thống </p>
-                        <AiOutlineMore className="icon1" />
+                        <div className="icon1">
+                            <AiOutlineMore />
+                        </div>
                         <div className="drop-down-item">
-                            <Link to="#">
+                            <Link to="/roles">
                                 <p>Quản lý vai trò</p>
                             </Link>
-                            <Link to="#">
+                            <Link to="/account">
                                 <p>Quản lý tài khoản</p>
                             </Link>
-                            <Link to="#">
+                            <Link to="/user-log">
                                 <p>Nhật ký người dùng</p>
                             </Link>
                         </div>
