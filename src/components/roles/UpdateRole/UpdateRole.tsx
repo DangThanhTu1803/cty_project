@@ -9,7 +9,7 @@ export const UpdateRole = () => {
         <div className="bg">
             <AddRoleContent namebtn='Cập nhật'/>
             <Menubar buttonid='qlvt'/>
-            <Topbar nametitle1='Cài đặt hệ thống >' nametitle2='Quản lý vai trò >' href='/roles' nametitle21='' href2='' nametitle3='Cập nhật vai trò'/>
+            <Topbar nametitle1='Cài đặt hệ thống ﹥' nametitle2='Quản lý vai trò ﹥' href='/roles' nametitle21='' href2='' nametitle3='Cập nhật vai trò'/>
         </div>
     </div>
   )

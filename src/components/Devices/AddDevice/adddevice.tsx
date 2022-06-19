@@ -9,7 +9,7 @@ export const Adddevice = () => {
         <div className='bg'>
         <Adddevices name='Thêm thiết bị'/>
         <Menubar buttonid='tb'/>
-        <Topbar nametitle1='Thiết bị >' nametitle2='Danh sách thiết bị >' href='/devices' nametitle21='' href2='' nametitle3='Thêm thiết bị'/>
+        <Topbar nametitle1='Thiết bị ﹥' nametitle2='Danh sách thiết bị ﹥' href='/devices' nametitle21='' href2='' nametitle3='Thêm thiết bị'/>
         </div>
     </div>
   )

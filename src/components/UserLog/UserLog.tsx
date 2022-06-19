@@ -9,7 +9,7 @@ export const UserLog = () => {
         <div className="bg">
             <UserLogContent/>
             <Menubar buttonid='nknd'/>
-            <Topbar nametitle1='Cài đặt hệ thống >' nametitle2='' href='' nametitle21='' href2='' nametitle3=' Nhật ký hoạt động'/>
+            <Topbar nametitle1='Cài đặt hệ thống ﹥' nametitle2='' href='' nametitle21='' href2='' nametitle3=' Nhật ký hoạt động'/>
         </div>
     </div>
   )

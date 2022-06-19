@@ -49,17 +49,25 @@ input{
     left: 0px;
     top: 28px;
     font-family: 'Nunito';
-
-    /* white */
-
     background: #FFFFFF;
-    /* Gray/$-gray-100 */
-
     border: 1.5px solid #D4D4D7;
     border-radius: 8px;
+    cursor: default;
+    pointer-events: none;
 }
 
-.service_status_active div {
+.service_status_active .down {
+    position: absolute;
+    height: 24px;
+    width: 24px;
+    bottom: 10px;
+    right: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #FF7506;
+}
+.service_status_active .up {
     position: absolute;
     height: 24px;
     width: 24px;
@@ -110,7 +118,7 @@ input{
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 8px 16px;
+    padding: 8px 12px;
     gap: 8px;
     position: absolute;
     left: 0%;
@@ -128,7 +136,7 @@ input{
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 8px 16px;
+    padding: 8px 12px;
     gap: 8px;
     position: absolute;
     left: 53.12%;
@@ -149,3 +157,7 @@ input{
     align-items: center;
     justify-content: center;
 } */
+input[type='date']::-webkit-calendar-picker-indicator {
+    
+    filter: invert(0.5) sepia(20) saturate(15) hue-rotate(4deg);
+}

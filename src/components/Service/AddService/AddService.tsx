@@ -10,7 +10,7 @@ export const AddService = () => {
       <div className='bg'>
         <AddServicesContent name='Thêm dịch vụ'/>
         <Menubar buttonid='dv'/>
-        <Topbar nametitle1='Dịch vụ >' nametitle2='Danh sách dịch vụ >' href='/services' nametitle21='' href2='' nametitle3='Thêm dịch vụ' />
+        <Topbar nametitle1='Dịch vụ ﹥' nametitle2='Danh sách dịch vụ ﹥' href='/services' nametitle21='' href2='' nametitle3='Thêm dịch vụ' />
       </div>
     </div>
   )

@@ -3,13 +3,13 @@ import { AiOutlineComment } from "react-icons/ai";
 import { RiStackLine } from "react-icons/ri";
 import Chart from 'react-apexcharts'
 import { buildStyles, CircularProgressbar } from "@rhazegh/react-circular-progressbar";
-import { Calendar } from "./Calendar";
+import { Calendarr } from "./Calendar";
 import { Link } from "react-router-dom";
 
 export const Overview = () => {
     return (
         <div className="overview">
-            <span>Tổng quan</span>
+            <span className="over-span">Tổng quan</span>
             <Link to={'/devices'}>
                 <div className="overview-device">
                     <div className='percent'>
@@ -171,7 +171,7 @@ export const Overview = () => {
                 </div>
             </Link>
             <div className="overview-datepicker">
-                <Calendar />
+                <Calendarr />
             </div>
         </div>
     )

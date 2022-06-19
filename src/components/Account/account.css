@@ -39,6 +39,123 @@
     border-radius: 8px;
 }
 
+.account_role-name .down {
+    position: absolute;
+    height: 24px;
+    width: 24px;
+    bottom: 10px;
+    right: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #FF7506;
+}
+
+.account_role-name .up {
+    position: absolute;
+    height: 24px;
+    width: 24px;
+    bottom: 10px;
+    right: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #FF7506;
+}
+
+/* .account_role-name .select-drop-down{
+    width: 132px;
+} */
+
+.add-acc_role .down {
+    position: absolute;
+    height: 24px;
+    width: 24px;
+    bottom: 10px;
+    right: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #FF7506;
+}
+
+.add-acc_role .up {
+    position: absolute;
+    height: 24px;
+    width: 24px;
+    bottom: 10px;
+    right: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #FF7506;
+}
+
+.add-acc_role input {
+    cursor: default;
+    pointer-events: none;
+}
+
+.add-acc_status .down {
+    position: absolute;
+    height: 24px;
+    width: 24px;
+    bottom: 10px;
+    right: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #FF7506;
+}
+
+.add-acc_status .up {
+    position: absolute;
+    height: 24px;
+    width: 24px;
+    bottom: 10px;
+    right: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #FF7506;
+}
+
+.add-acc_status input {
+    cursor: default;
+    pointer-events: none;
+}
+
+.add-acc_status .select-drop-down-item {
+    width: 560px;
+}
+
+.add-acc_role .select-drop-down-item {
+    width: 560px;
+}
+
+.add-acc_role .select-drop-down {
+    overflow-y: scroll;
+    height: 132px;
+}
+
+.select-drop-down {
+    overflow-y: scroll;
+    height: 132px;
+    overflow-x: hidden;
+}
+
+.select-drop-down::-webkit-scrollbar {
+    width: 4px;
+}
+
+.select-drop-down::-webkit-scrollbar-thumb {
+    position: absolute;
+    width: 4px;
+    height: 64px;
+    background: #FFC89B;
+    border-radius: 43px
+}
+
 .account_content table th div {
     margin-left: 17px;
 }
@@ -207,10 +324,12 @@
     left: 608px;
     top: 158px;
 }
-.add-acc_pwd .show{
+
+.add-acc_pwd .show {
     left: 524px;
 }
-.add-acc_pwd .hide{
+
+.add-acc_pwd .hide {
     left: 524px;
 }
 
@@ -227,10 +346,12 @@
     left: 608px;
     top: 250px;
 }
-.add-acc_pwd-conf .show{
+
+.add-acc_pwd-conf .show {
     left: 524px;
 }
-.add-acc_pwd-conf .hide{
+
+.add-acc_pwd-conf .hide {
     left: 524px;
 }
 

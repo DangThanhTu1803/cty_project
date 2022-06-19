@@ -9,7 +9,7 @@ export const ReportList = () => {
         <div className='bg'>
             <ReportListContent/>
             <Menubar buttonid='bc'/>
-            <Topbar nametitle1='Báo cáo >' nametitle2='' href='' nametitle21='' href2='' nametitle3='Lập báo cáo'/>
+            <Topbar nametitle1='Báo cáo ﹥' nametitle2='' href='' nametitle21='' href2='' nametitle3='Lập báo cáo'/>
         </div>
     </div>
   )

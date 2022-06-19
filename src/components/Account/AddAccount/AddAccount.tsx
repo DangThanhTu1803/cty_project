@@ -9,7 +9,7 @@ export const AddAccount = () => {
         <div className="bg">
             <AddAccountContent title='Thêm'/>
             <Menubar buttonid='nknd'/>
-            <Topbar nametitle1='Cài đặt hệ thống >' nametitle2='Quản lý tài khoản >' href='/account' nametitle21='' href2='' nametitle3='Thêm tài khoản'/>
+            <Topbar nametitle1='Cài đặt hệ thống ﹥' nametitle2='Quản lý tài khoản ﹥' href='/account' nametitle21='' href2='' nametitle3='Thêm tài khoản'/>
         </div>
     </div>
   )

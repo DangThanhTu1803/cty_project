@@ -8,7 +8,7 @@ export const UpdateAccount = () => {
           <div className="bg">
               <AddAccountContent title='Cập nhật'/>
               <Menubar buttonid="qltk"/>
-              <Topbar nametitle1='Cài đặt hệ thống >' nametitle2='Quản lý tài khoản >' href='/account' nametitle21='' href2='' nametitle3='Cập nhật tài khoản'/>
+              <Topbar nametitle1='Cài đặt hệ thống ﹥' nametitle2='Quản lý tài khoản ﹥' href='/account' nametitle21='' href2='' nametitle3='Cập nhật tài khoản'/>
           </div>
       </div>
     )

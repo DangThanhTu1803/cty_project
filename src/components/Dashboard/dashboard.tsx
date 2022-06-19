@@ -11,7 +11,7 @@ export const Dashboard = () => {
             <div className='bg'>
                 <h1>Biểu đồ cấp số</h1>
                 <Cards/>
-                <Chart/>
+                <Chart charts=''/>
                 <Menubar buttonid="db"/>
                 <Overview />
                 <Topbar nametitle1='' nametitle2='' href='' nametitle21='' href2='' nametitle3='Dashboard' />

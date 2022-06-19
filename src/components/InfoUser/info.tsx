@@ -9,7 +9,7 @@ export const Info = () => {
         <div className="bg">
             <Menubar buttonid=""/>
             <Infomation/>
-            <Topbar nametitle1='' nametitle2='' href='' nametitle21='' href2='' nametitle3=''/>
+            <Topbar nametitle1='' nametitle2='' href='' nametitle21='' href2='' nametitle3='Thông tin cá nhân'/>
         </div>
         </div>
     )

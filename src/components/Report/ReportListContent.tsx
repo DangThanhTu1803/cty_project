@@ -12,11 +12,11 @@ export const ReportListContent = () => {
             <div className='datePicker'>
                 <p>Chọn thời gian</p>
                 <div className='pick'>
-                    <input type="text" placeholder='10/10/2021' />
+                    <input type="date" placeholder='10/10/2021' />
                     <div className='icon_next'>
                         <IoMdArrowDropright />
                     </div>
-                    <input type="text" placeholder='18/10/2021' />
+                    <input type="date" placeholder='18/10/2021' />
                 </div>
             </div>
             <DownloadBtn/>

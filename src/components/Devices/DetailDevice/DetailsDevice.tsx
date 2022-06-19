@@ -47,7 +47,7 @@ export const DetailsDevice = () => {
                     </div>
                 </div>
                 <Menubar buttonid='tb'/>
-                <Topbar nametitle1='Thiết bị' nametitle2='Danh sách thiết bị' href='/devices' nametitle21='' href2='' nametitle3='Chi tiết thiết bị' />
+                <Topbar nametitle1='Thiết bị ﹥' nametitle2='Danh sách thiết bị ﹥' href='/devices' nametitle21='' href2='' nametitle3='Chi tiết thiết bị' />
             </div>
         </div>
     )

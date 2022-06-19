@@ -61,7 +61,7 @@ export const RoleListContent = () => {
                     <tr>
                     <td>
                             <div>
-                                <p>Kế toán</p>
+                                <p>Bác sĩ</p>
                             </div>
                         </td>
                         <td>
@@ -85,7 +85,7 @@ export const RoleListContent = () => {
                     <tr>
                     <td>
                             <div>
-                                <p>Kế toán</p>
+                                <p>Lễ tân</p>
                             </div>
                         </td>
                         <td>
@@ -109,7 +109,7 @@ export const RoleListContent = () => {
                     <tr>
                     <td>
                             <div>
-                                <p>Kế toán</p>
+                                <p>Quản lý</p>
                             </div>
                         </td>
                         <td>
@@ -133,7 +133,7 @@ export const RoleListContent = () => {
                     <tr>
                     <td>
                             <div>
-                                <p>Kế toán</p>
+                                <p>Admin</p>
                             </div>
                         </td>
                         <td>
@@ -157,7 +157,7 @@ export const RoleListContent = () => {
                     <tr>
                     <td>
                             <div>
-                                <p>Kế toán</p>
+                                <p>Superadmin</p>
                             </div>
                         </td>
                         <td>

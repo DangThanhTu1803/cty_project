@@ -55,11 +55,11 @@ export const DetailService = () => {
                     <div className="detail_datepicker-status">
                         <span>Chọn thời gian</span>
                         <div className='pick'>
-                            <input type="text" placeholder='10/10/2021' />
+                            <input type="date" placeholder='10/10/2021' />
                             <div className='icon_next'>
                                 <IoMdArrowDropright />
                             </div>
-                            <input type="text" placeholder='18/10/2021' />
+                            <input type="date" placeholder='18/10/2021' />
                         </div>
                     </div>
                     <div className="detail_search">
@@ -163,7 +163,7 @@ export const DetailService = () => {
                 </div>
                 <UpdateAndBack href1='/services/updates' href2='/services'/>
                 <Menubar buttonid='dv'/>
-                <Topbar nametitle1='Dịch vụ >' nametitle2='Danh sách dịch vụ >' href='/services' nametitle21='' href2='' nametitle3='Chi tiết' />
+                <Topbar nametitle1='Dịch vụ ﹥' nametitle2='Danh sách dịch vụ ﹥' href='/services' nametitle21='' href2='' nametitle3='Chi tiết' />
             </div>
         </div>
     )

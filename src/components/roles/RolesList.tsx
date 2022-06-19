@@ -9,7 +9,7 @@ export const RolesList = () => {
         <div className="bg">
             <RoleListContent/>
             <Menubar buttonid='qlvt'/>
-            <Topbar nametitle1='Cài đặt hệ thống >' nametitle2='' href='' nametitle21='' href2='' nametitle3='Quản lý vai trò'/>
+            <Topbar nametitle1='Cài đặt hệ thống ﹥' nametitle2='' href='' nametitle21='' href2='' nametitle3='Quản lý vai trò'/>
         </div>
     </div>
   )

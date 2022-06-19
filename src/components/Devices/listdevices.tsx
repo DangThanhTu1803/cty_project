@@ -8,35 +8,41 @@ import { Connected, Disconnected } from '../status/connect/connect'
 import { Actived, NonActived } from '../status/active/active'
 
 export const Listdevices = () => {
+    const Chose = (id: string, input: string) => {
+        const ip: any = document.getElementById(input)
+        const text: any = document.getElementById(id)
+        ip.value = text.innerText
+    }
+
+    const show = (id: string, u: string, d: string) => {
+        const ip: any = document.getElementById(id)
+        const up: any = document.getElementById(u)
+        const down: any = document.getElementById(d)
+        if (ip.style.display === 'none') {
+            ip.style.display = 'block';
+            up.style.display = 'flex';
+            down.style.display = 'none';
+        } else {
+            ip.style.display = 'none';
+            down.style.display = 'flex';
+            up.style.display = 'none';
+        }
+    }
+    const showmore = (id: string) => {
+
+            const btn: any = document.getElementById(id)
+            if (btn.style.display === 'none')
+                btn.style.display = 'flex';
+
+            document.addEventListener("mousedown", (event) => {
+                btn.style.display = 'none';
+            })
+
+        }
     return (
         <div>
             <h1>Danh sách thiết bị</h1>
-            <div className='device_status_active'>
-                <p>Trạng thái hoạt động</p>
-                <input type="text" value={'Tất cả'} />
-                <div>
-                    <TiArrowSortedDown />
-                </div>
-            </div>
-            <div className='device_status_connect'>
-                <p>Trạng thái hoạt động</p>
-                <input type="text" value={'Tất cả'} />
-                <div>
-                    <TiArrowSortedDown />
-                </div>
-            </div>
-            <div className='search'>
-                <p>Từ khóa</p>
-                <input type="text" placeholder='Nhập từ khóa...' />
-                <div className='icon_search'>
-                    <FiSearch />
-                </div>
-            </div>
-            <div>
-                <Link to={'add-device'}>
-                    <Add nametitle='Thêm thiết bị' />
-                </Link>
-            </div>
+
             <div className='table'>
                 <table>
                     <tr>
@@ -74,7 +80,10 @@ export const Listdevices = () => {
                         <td>
                             <div>
                                 <p>Khám tim mạch, Khám mắt...</p>
-                                <a href="#"><p>Xem thêm</p></a>
+                                <label onClick={() => showmore('c2')}>Xem thêm</label>
+                                <i className="div-more" id="c2">Khám tim mạch, Khám Sản -
+                                    Phụ khoa, Khám răng hàm mặt, Khám tai mũi họng, Khám hô hấp, Khám tổng quát
+                                </i>
                             </div>
                         </td>
                         <td>
@@ -406,6 +415,45 @@ export const Listdevices = () => {
                     </tr>
                 </table>
             </div>
+            <div className='device_status_active'>
+                <p>Trạng thái hoạt động</p>
+                <div className='input_status' >
+                    <input type="text" id='ip' readOnly value={'Tất cả'} />
+                    <div id='down' className='down' onClick={() => show('tthd', 'up', 'down')}><TiArrowSortedDown /></div>
+                    <div id="up" className="up" style={{ display: 'none' }} onClick={() => show('tthd', 'up', 'down')}><TiArrowSortedUp /></div>
+                </div>
+                <div id='tthd' className='select-drop-down' onClick={() => show('tthd', 'up', 'down')}>
+                    <div className='select-drop-down-item ' onClick={() => Chose('tc', 'ip')}><label id='tc'>Tất cả</label></div>
+                    <div className='select-drop-down-item ' onClick={() => Chose('hd', 'ip')}><label id='hd'>Hoạt động</label></div>
+                    <div className='select-drop-down-item ' onClick={() => Chose('nhd', 'ip')}><label id='nhd'>Ngừng hoạt động</label></div>
+                </div>
+            </div>
+            <div className='device_status_connect'>
+                <p>Trạng thái kết nối</p>
+                <div className='input_connect' >
+                    <input type="text" id='ip1' readOnly value={'Tất cả'} />
+                    <div id='down1' className='down' onClick={() => show('ttkn', 'up1', 'down1')}><TiArrowSortedDown /></div>
+                    <div id="up1" className="up" style={{ display: 'none' }} onClick={() => show('ttkn', 'up1', 'down1')}><TiArrowSortedUp /></div>
+                </div>
+                <div id='ttkn' className='select-drop-down' onClick={() => show('ttkn', 'up1', 'down1')}>
+                    <div className='select-drop-down-item ' onClick={() => Chose('tc1', 'ip1')}><label id='tc1'>Tất cả</label></div>
+                    <div className='select-drop-down-item ' onClick={() => Chose('kn', 'ip1')}><label id='kn'>Kết nối</label></div>
+                    <div className='select-drop-down-item ' onClick={() => Chose('mkn', 'ip1')}><label id='mkn'>Mất kết nối</label></div>
+                </div>
+            </div>
+            <div className='search'>
+                <p>Từ khóa</p>
+                <input type="text" placeholder='Nhập từ khóa...' />
+                <div className='icon_search'>
+                    <FiSearch />
+                </div>
+            </div>
+            <div>
+                <Link to={'add-device'}>
+                    <Add nametitle='Thêm thiết bị' />
+                </Link>
+            </div>
+
             <div className="pagin">
                 <Pagination />
             </div>
