@@ -324,7 +324,7 @@
 
 }
 
-.detail_status div {
+.detail_status .down {
     position: absolute;
     width: 24px;
     height: 24px;
@@ -336,6 +336,21 @@
     color: #FF7506;
     font-size: 24px;
 }
+.detail_status .up {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    right: 12px;
+    bottom: 10.08px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #FF7506;
+    font-size: 24px;
+}
+.detail_status .select-drop-down-item{
+    width: 160px;
+}
 
 .detail_datepicker-status {
     position: absolute;
@@ -344,6 +359,7 @@
     left: 196px;
     top: 16px;
 }
+
 
 .detail_datepicker-status .pick {
     width: 280px;

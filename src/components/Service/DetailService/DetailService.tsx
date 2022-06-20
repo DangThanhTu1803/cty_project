@@ -1,7 +1,7 @@
 import React from 'react'
 import { FiSearch } from 'react-icons/fi'
 import { IoMdArrowDropright } from 'react-icons/io'
-import { TiArrowSortedDown } from 'react-icons/ti'
+import { TiArrowSortedDown, TiArrowSortedUp } from 'react-icons/ti'
 import { UpdateAndBack } from '../../Devices/btnRightLayout/UpdateAndBack'
 import { Menubar } from '../../Layout/Menubar'
 import { Topbar } from '../../Layout/Topbar'
@@ -10,6 +10,26 @@ import { Absent, Completed, Doing } from '../../status/status_details/DetailStat
 import './details.css'
 
 export const DetailService = () => {
+    const Chose = (id: string, input: string) => {
+        const ip: any = document.getElementById(input)
+        const text: any = document.getElementById(id)
+        ip.value = text.innerText
+    }
+
+    const show = (id: string, u: string, d: string) => {
+        const ip: any = document.getElementById(id)
+        const up: any = document.getElementById(u)
+        const down: any = document.getElementById(d)
+        if (ip.style.display === 'none') {
+            ip.style.display = 'block';
+            up.style.display = 'flex';
+            down.style.display = 'none';
+        } else {
+            ip.style.display = 'none';
+            down.style.display = 'flex';
+            up.style.display = 'none';
+        }
+    }
     return (
         <div className='back'>
             <div className='bg'>
@@ -45,30 +65,6 @@ export const DetailService = () => {
                     <i className='exam'>Ví dụ: 201-2001</i>
                 </div>
                 <div className="detail_bg_status">
-                    <div className="detail_status">
-                        <span>Trạng thái</span>
-                        <input type="text" value={'Tất cả'} />
-                        <div>
-                            <TiArrowSortedDown />
-                        </div>
-                    </div>
-                    <div className="detail_datepicker-status">
-                        <span>Chọn thời gian</span>
-                        <div className='pick'>
-                            <input type="date" placeholder='10/10/2021' />
-                            <div className='icon_next'>
-                                <IoMdArrowDropright />
-                            </div>
-                            <input type="date" placeholder='18/10/2021' />
-                        </div>
-                    </div>
-                    <div className="detail_search">
-                        <span>Từ khóa</span>
-                        <input type="text" placeholder='Nhập từ khóa' />
-                        <div className='icon_search'>
-                            <FiSearch />
-                        </div>
-                    </div>
                     <div className="table">
                         <table>
                             <tr>
@@ -86,7 +82,7 @@ export const DetailService = () => {
                                 </td>
                             </tr>
                             <tr>
-                            <td>
+                                <td>
                                     <div>
                                         <p>2010002</p>
                                     </div>
@@ -157,12 +153,44 @@ export const DetailService = () => {
                             </tr>
                         </table>
                     </div>
+                    <div className="detail_status">
+                        <span>Trạng thái</span>
+                        <div className='input_status' >
+                            <input type="text" id='ip' readOnly value={'Tất cả'} />
+                            <div id='down' className='down' onClick={() => show('tt', 'up', 'down')}><TiArrowSortedDown /></div>
+                            <div id="up" className="up" style={{ display: 'none' }} onClick={() => show('tt', 'up', 'down')}><TiArrowSortedUp /></div>
+                        </div>
+                        <div id='tt' className='select-drop-down' onClick={() => show('tt', 'up', 'down')}>
+                            <div className='select-drop-down-item ' onClick={() => Chose('tc', 'ip')}><label id='tc'>Tất cả</label></div>
+                            <div className='select-drop-down-item ' onClick={() => Chose('dht', 'ip')}><label id='dht'>Đã hoàn thành</label></div>
+                            <div className='select-drop-down-item ' onClick={() => Chose('dth', 'ip')}><label id='dth'>Đã thực hiện</label></div>
+                            <div className='select-drop-down-item ' onClick={() => Chose('v', 'ip')}><label id='v'>Vắng</label></div>
+                        </div>
+                    </div>
+                    <div className="detail_datepicker-status">
+                        <span>Chọn thời gian</span>
+                        <div className='pick'>
+                            <input type="date" placeholder='10/10/2021' />
+                            <div className='icon_next'>
+                                <IoMdArrowDropright />
+                            </div>
+                            <input type="date" placeholder='18/10/2021' />
+                        </div>
+                    </div>
+                    <div className="detail_search">
+                        <span>Từ khóa</span>
+                        <input type="text" placeholder='Nhập từ khóa' />
+                        <div className='icon_search'>
+                            <FiSearch />
+                        </div>
+                    </div>
+
                     <div className='detail_pagin'>
                         <Pagination />
                     </div>
                 </div>
-                <UpdateAndBack href1='/services/updates' href2='/services'/>
-                <Menubar buttonid='dv'/>
+                <UpdateAndBack href1='/services/updates' href2='/services' />
+                <Menubar buttonid='dv' />
                 <Topbar nametitle1='Dịch vụ ﹥' nametitle2='Danh sách dịch vụ ﹥' href='/services' nametitle21='' href2='' nametitle3='Chi tiết' />
             </div>
         </div>
