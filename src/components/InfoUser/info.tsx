@@ -1,4 +1,4 @@
-import { Infomation } from "./infomation"
+import  {Infomation}  from "./infomation"
 import { Menubar } from "../Layout/Menubar"
 import { Topbar } from "../Layout/Topbar"
 

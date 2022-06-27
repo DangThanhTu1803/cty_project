@@ -51,48 +51,52 @@ export const Login = () => {
         }
     }
     return (
-        <div className="login-page" >
-            <img className="logo" src={logo} alt="" />
-            <form onSubmit={checklogin} autoComplete='off'>
+        <div className="back">
+            <div className="bg">
+                <div className="login-page" >
+                    <img className="logo" src={logo} alt="" />
+                    <form onSubmit={checklogin} autoComplete='off'>
 
-                <div className="username">
-                    <label htmlFor="">Tên đăng nhập *</label>
-                    <div id='name' style={{ borderRadius: '8px' }}>
-                        <input type="text" name='name' />
+                        <div className="username">
+                            <label htmlFor="">Tên đăng nhập *</label>
+                            <div id='name' style={{ borderRadius: '8px' }}>
+                                <input type="text" name='name' />
+                            </div>
+                        </div>
+
+                        <div className="password">
+                            <label htmlFor="">Mật khẩu *</label>
+                            <div id='pass' style={{ borderRadius: '8px' }}>
+                                <input type="password" id='pw1' name='password'></input>
+                                <FiEyeOff className="show" id='show' onClick={() => showpw()} />
+                                <FiEye className='hide' id='hide' style={{ display: 'none' }} onClick={() => showpw()} />
+                            </div>
+
+                        </div>
+                        <div id='warning' className='warning' style={{ display: 'none' }}>
+                            <FiAlertCircle className='icon' style={{ color: 'red', flex: 'none', marginRight: '4px' }} />
+                            <p style={{ flex: '4', margin: 'auto', color: 'red', fontSize: '14px' }}>Sai mật khẩu hoặc tên đăng nhập</p>
+                        </div>
+
+                        <Link to={'/quen-mat-khau'} className='a' id='qmk1'>
+                            Quên mật khẩu?
+                        </Link>
+                        <div>
+                            {/* <Link to={'/info'}> */}
+                            <button type="submit" className="submit">Đăng nhập</button>
+                            {/* </Link> */}
+                        </div>
+                    </form>
+                    {/* <div  className='a2' style={{ display: 'none' }}> */}
+                    <Link to='/quen-mat-khau' className='a2' id='qmk2' style={{ margin: "auto" }} >Quên mật khẩu?</Link>
+                    {/* </div> */}
+                    <div className="banner">
+                        <img src={login} alt="" />
+                        <div className="name_proj">
+                            <p>Hệ thống</p>
+                            <p>Quản lý xếp hàng</p>
+                        </div>
                     </div>
-                </div>
-
-                <div className="password">
-                    <label htmlFor="">Mật khẩu *</label>
-                    <div id='pass' style={{ borderRadius: '8px' }}>
-                        <input type="password" id='pw1' name='password'></input>
-                        <FiEyeOff className="show" id='show' onClick={() => showpw()} />
-                        <FiEye className='hide' id='hide' style={{ display: 'none' }} onClick={() => showpw()} />
-                    </div>
-
-                </div>
-                <div id='warning' className='warning' style={{ display: 'none'}}>
-                    <FiAlertCircle className='icon' style={{ color: 'red', flex: 'none', marginRight: '4px' }} />
-                    <p style={{ flex: '4', margin: 'auto', color: 'red', fontSize: '14px' }}>Sai mật khẩu hoặc tên đăng nhập</p>
-                </div>
-
-                <Link to={'/quen-mat-khau'} className='a' id='qmk1'>
-                    Quên mật khẩu?
-                </Link>
-                <div>
-                    {/* <Link to={'/info'}> */}
-                    <button type="submit" className="submit">Đăng nhập</button>
-                    {/* </Link> */}
-                </div>
-            </form>
-            {/* <div  className='a2' style={{ display: 'none' }}> */}
-            <Link to='/quen-mat-khau' className='a2' id='qmk2' style={{ margin: "auto" }} >Quên mật khẩu?</Link>
-            {/* </div> */}
-            <div className="banner">
-                <img src={login} alt="" />
-                <div className="name_proj">
-                    <p>Hệ thống</p>
-                    <p>Quản lý xếp hàng</p>
                 </div>
             </div>
         </div>
