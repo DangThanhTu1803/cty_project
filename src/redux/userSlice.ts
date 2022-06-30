@@ -6,7 +6,7 @@ const initialState: userInfo = {
     fullName: 'Lê Quỳnh Ái Vân',
     phoneNumber: '0123456789',
     email: 'admin@abc.com',
-    password: 'abcxyz',
+    password: '123',
     role: 0,
     avatar: 'https://data.whicdn.com/images/228714327/original.jpg'
 }
